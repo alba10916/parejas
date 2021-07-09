@@ -1,0 +1,85 @@
+body{
+    background-image:url("../img/tablero.jpg") ;
+    height: 300px;
+    width: 300px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+.carta {
+    background-image: url("../img/carta.png");
+    height: 100px;
+    width: 100px;
+    margin: 10px;  
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    transition: all 1s ease;
+    transform: perspective(600px);
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+
+
+    
+    
+
+  
+}
+
+.carta.telefono.revelado
+{
+    background-image: url("../img/telefono.jpg");
+    height: 100px;
+    width: 100px;
+    margin: 10px;  
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+    transition-duration: 200ms;
+
+}
+
+
+.carta.bolis.revelado
+{
+    background-image: url("../img/bolis.jpg");
+    height: 100px;
+    width: 100px;
+    margin: 10px;  
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+    transition-duration: 200ms;
+}
+
+.carta.mochila.revelado 
+{
+    background-image: url("../img/mochila.jpg");
+    height: 100px;
+    width: 100px;
+    margin: 10px;  
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+    transition-duration: 200ms;
+
+}
+
+.carta.mesa.revelado
+{
+    background-image: url("../img/mesa.jpg");
+    height: 100px;
+    width: 100px;
+    margin: 10px;  
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+    transition-duration: 200ms;
+
+}
+
+
+.controls{
+    
+    background-image: url("../img/reinicia.jpg");
+    background-size:contain ;
+    width: 100px;
+    height: 100px;
+    
+
+}
